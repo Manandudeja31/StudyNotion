@@ -15,12 +15,12 @@ const About = () => {
       {/* Section 1 */}
       <section className=" bg-richBlack-800">
         <div className="mx-auto flex flex-col justify-center items-center w-full max-w-maxContent  justify-items-center gap-x-2 text-center md:gap-x-6">
-          <h1 className="font-md col-span-2 pl-2 md:col-span-3 text-center text-richBlack-200 mt-20">
+          <h1 className="font-md col-span-2 pl-2 md:col-span-3 text-center text-richBlack-200 mt-10">
             About Page
           </h1>
           <header className="col-span-2 pl-0 mt-12 max-w-4xl text-[16px]  font-semibold text-richBlack-5 ">
             Driving Innovation in Online Education
-            <p className="col-span-3 mb-[3.2rem] mt-4 max-w-4xl text-[16px] text-richBlack-300">
+            <p className="col-span-3 mb-[3.2rem] mt-4 max-w-4xl text-[16px] px-5 md:px-0 text-richBlack-300">
               Studynotion is at the forefront of driving innovation in online
               education. We're passionate about creating a brighter future by
               offering cutting-edge courses, leveraging emerging technologies,
@@ -46,14 +46,14 @@ const About = () => {
           {/* Founding story main div */}
           <div className="flex flex-col md:flex-row justify-center items-center pb-28">
             {/* Founding story left div */}
-            <div className="pr-20">
+            <div className="md:pr-20 flex flex-col justify-center items-center px-10 text-center md:px-0 pb-5 md:pb-0">
               <h1
                 className="font-bold text-[36px] pb-5 bg-gradient-to-br from-[#833AB4] via-[#FD1D1D] to-[#FCB045]
                              text-transparent bg-clip-text"
               >
                 Our Founding Story
               </h1>
-              <p className="text-[16px] max-w-lg text-richBlack-200 pb-3">
+              <p className="text-[16px] max-w-lg text-richBlack-200 pb-3 ">
                 Our e-learning platform was born out of a shared vision and
                 passion for transforming education. It all began with a group of
                 educators, technologists, and lifelong learners who recognized
@@ -71,13 +71,13 @@ const About = () => {
               </p>
             </div>
             {/* Founding story right div */}
-            <div className=" sm:pr-10">
+            <div className=" px-5 md:px-0">
               <img src={FoundingStory} />
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center justify-center">
-            <div className="pr-20">
+          <div className="flex flex-col md:flex-row items-center justify-center px-10 text-center">
+            <div className="md:pr-20 ">
               <h1
                 className="font-bold text-[36px] pb-5 bg-gradient-to-br from-[#E65C00] to-[#F9D423]
                              text-transparent bg-clip-text"
