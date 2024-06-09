@@ -46,9 +46,13 @@ function Navbar() {
   const matchRoute = (route) => matchPath({ path: route }, location.pathname);
   return (
     <>
-      <nav className="flex  items-center justify-between border-b-[1px] border-b-richBlack-700 bg-richBlack-800 px-5 py-3 pl-12 text-richBlack-25">
+      <nav className="flex  items-center justify-between h-16 border-b-[1px] border-b-richBlack-700 bg-richBlack-800 px-5 py-3 pl-12 text-richBlack-25">
         <Link to={"/"}>
-          <img className="h-6 md:h-8" src={Logo} alt="home" />
+          <img
+            className={`h-6 md:h-8 ${menu && "hidden"}`}
+            src={Logo}
+            alt="home"
+          />
         </Link>
         <ul className="hidden items-center gap-3 md:flex">
           {NavbarLinks.map((link, idx) =>
@@ -104,9 +108,7 @@ function Navbar() {
                           }`}
                           to={link.path}
                         >
-                          <Link to={link.path}>
-                            <div className=" cursor-pointer">{link.title}</div>
-                          </Link>
+                          <div className=" cursor-pointer">{link.title}</div>
                         </Link>
                       </li>
                     )
@@ -122,7 +124,7 @@ function Navbar() {
             onClick={openMenu}
           />
           {menu && (
-            <ImCross className="right-8 top-5 absolute" onClick={openMenu} />
+            <ImCross className="right-8 top-6 absolute" onClick={openMenu} />
           )}
         </div>
         {/* login signup/ dashboard */}
