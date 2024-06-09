@@ -1,5 +1,4 @@
 import React from "react";
-import HighlightText from "../components/core/Homepage/HighlightText";
 import BannerImage1 from "../assets/Images/aboutus1.webp";
 import BannerImage2 from "../assets/Images/aboutus2.webp";
 import BannerImage3 from "../assets/Images/aboutus3.webp";
@@ -15,7 +14,7 @@ const About = () => {
       {/* Section 1 */}
       <section className=" bg-richBlack-800">
         <div className="mx-auto flex flex-col justify-center items-center w-full max-w-maxContent  justify-items-center gap-x-2 text-center md:gap-x-6">
-          <h1 className="font-md col-span-2 pl-2 md:col-span-3 text-center text-richBlack-200 mt-10">
+          <h1 className="font-md col-span-2 pl-2 md:col-span-3 text-center text-richBlack-200 mt-0">
             About Page
           </h1>
           <header className="col-span-2 pl-0 mt-12 max-w-4xl text-[16px]  font-semibold text-richBlack-5 ">
@@ -28,9 +27,13 @@ const About = () => {
             </p>
           </header>
           <div className="flex gap-x-3 mx-auto">
-            <img src={BannerImage1} className=" pr-5 pl-3 md:pl-0 md:pr-0" />
-            <img src={BannerImage2} className=" hidden md:block" />
-            <img src={BannerImage3} className=" hidden md:block" />
+            <img
+              src={BannerImage1}
+              alt="banner"
+              className=" pr-5 pl-3 md:pl-0 md:pr-0"
+            />
+            <img src={BannerImage2} alt="banner" className=" hidden md:block" />
+            <img src={BannerImage3} alt="banner" className=" hidden md:block" />
           </div>
         </div>
       </section>
@@ -72,7 +75,7 @@ const About = () => {
             </div>
             {/* Founding story right div */}
             <div className=" px-5 md:px-0">
-              <img src={FoundingStory} />
+              <img src={FoundingStory} alt="founding" />
             </div>
           </div>
 

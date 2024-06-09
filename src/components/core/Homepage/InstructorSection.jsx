@@ -8,7 +8,7 @@ const InstructorSection = () => {
     <div className="mt-16 mb-16">
       <div className="flex flex-col md:flex-row text-center gap-20 justify-center items-center">
         <div className="">
-          <img src={instructor} />
+          <img src={instructor} alt="instructor" />
         </div>
         <div className="md:w-[50%] flex flex-col justify-center items-center gap-10">
           <div className="text-4xl font-semibold max-w-xs">
