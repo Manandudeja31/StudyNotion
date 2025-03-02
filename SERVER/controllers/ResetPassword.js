@@ -3,7 +3,7 @@ const { BadRequestError, NotFoundError, ForbiddenError } = require("../errors");
 const User = require("../models/User");
 const mailSender = require("../utils/mailSender");
 const crypto = require("crypto");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 //reset password token(Send Reset Password Link)
 exports.resetPasswordToken = async (req, res) => {

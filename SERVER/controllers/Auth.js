@@ -5,7 +5,7 @@ const OTP = require("../models/OTP");
 const { BadRequestError, UnauthenticatedError } = require("../errors");
 const otpGenerator = require("otp-generator");
 const mailSender = require("../utils/mailSender");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 
