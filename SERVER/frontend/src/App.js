@@ -30,7 +30,10 @@ import InstructorDashboard from "./components/core/Dashboard/InstructorDashboard
 function App() {
   const { user } = useSelector((state) => state.profile);
   return (
-    <div className="w-screen min-h-screen bg-richBlack-900 flex flex-col font-inter">
+    <div
+      className="w-screen min-h-screen bg-richBlack-900 flex flex-col font-inter h-screen overflow-y-auto 
+     scrollbar-thin scrollbar-track-gray-900 scrollbar-thumb-black"
+    >
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

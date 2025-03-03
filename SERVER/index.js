@@ -42,6 +42,7 @@ app.use(
 
 //cloudinay connection
 cloudinaryConnect();
+app.use(express.static(path.resolve(__dirname, "frontend", "build")));
 //routes
 app.use("/api/v1/auth", userRoutes);
 app.use("/api/v1/profile", profileRoutes);
@@ -49,8 +50,7 @@ app.use("/api/v1/payment", paymentRoutes);
 app.use("/api/v1/course", courseRoutes);
 app.use("/api/v1", contactRoutes);
 
-app.get("/", (req, res) => {
-  app.use(express.static(path.resolve(__dirname, "frontend", "build")));
+app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
 });
 

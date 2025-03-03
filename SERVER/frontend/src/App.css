@@ -4,9 +4,34 @@
 
 html,
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .homepage_bg {
-    background-image: url(../src/assets/Images/bghome.svg);
+  background-image: url(../src/assets/Images/bghome.svg);
+}
+
+/* Apply scrollbar styles globally */
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+/* Firefox Scrollbar */
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: black #1a1a1a;
 }

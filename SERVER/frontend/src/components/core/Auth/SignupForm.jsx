@@ -86,7 +86,10 @@ function SignupForm() {
       {/* Tab */}
       <Tab tabData={tabData} field={accountType} setField={setAccountType} />
       {/* Form */}
-      <form onSubmit={handleOnSubmit} className="flex w-full flex-col gap-y-4">
+      <form
+        onSubmit={handleOnSubmit}
+        className="flex w-full flex-col gap-y-4 md:mx-0 mx-5"
+      >
         <div className="flex gap-x-4">
           <label>
             <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richBlack-5">
